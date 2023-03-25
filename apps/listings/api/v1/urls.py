@@ -7,6 +7,6 @@ from .views.listings import ListingViewSet
 ROUTER = routers.DefaultRouter()
 
 # ROUTER.register('demo', DemoViewSet, basename='demo-viewset')
-ROUTER.register('property', ListingViewSet, basename='listing-viewset')
+ROUTER.register('', ListingViewSet, basename='listing-viewset')
 
 urlpatterns = ROUTER.urls

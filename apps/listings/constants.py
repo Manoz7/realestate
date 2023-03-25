@@ -1,11 +1,33 @@
-PROPERTY_CHOICES = (
-    ("1" , "N/A"),
-    ("2" , "North"),
-    ("3" , "East"),
-    ("4" , "West"),
-    ("5" , "South"),
-    ("6" , "North-East"),
-    ("7" , "North-West"),
-    ("8" , "South-East"),
-    ("9" , "South-West"),
+NOT_MENTIONED = ("0", "N/A")
+NORTH = ("N", "North")
+EAST = ("E", "East")
+WEST = ("W", "West")
+SOUTH = ("S", "South")
+NORTH_EAST = ("NE", "North-East")
+NORTH_WEST = ("NW", "North-West")
+SOUTH_EAST = ("SE", "South-East")
+SOUTH_WEST = ("SW", "South-West")
+
+PROPERTY_FACE = (
+    NOT_MENTIONED,
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST,
+    NORTH_EAST,
+    NORTH_WEST,
+    SOUTH_EAST,
+    SOUTH_WEST
+)
+
+# STATUS
+
+PENDING = ('P', 'PENDING')
+ACTIVE = ('A', 'ACTIVE')
+SOLD = ('S', 'SOLD')
+
+STATUS = (
+    PENDING,
+    ACTIVE,
+    SOLD
 )
