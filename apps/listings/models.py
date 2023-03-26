@@ -27,7 +27,7 @@ class Listing(BaseUUIDModel):
     zipcode = models.CharField(max_length=20, blank=True, default=44600)
     description = models.TextField(blank=True)
     property_face = models.CharField(max_length=20, choices=PROPERTY_FACE, default="P")
-    build_year = models.DateField()
+    build_year = models.DateField(null=True, blank=True)
     price = models.IntegerField()
     bedrooms = models.IntegerField(default=0, blank=True)
     bathroom = models.IntegerField(default=0, blank=True)
